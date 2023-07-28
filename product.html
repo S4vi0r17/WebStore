@@ -27,22 +27,27 @@
     <main class="container">
         <h1>ReactJs</h1>
 
-        <div class="t-shirt">
-            <img src="img/3.jpg" alt="react-img" class="t-shirt__img">
-        </div>
+        
 
-        <div class="t-shirt__text">
-            <p>Quisque tincidunt odio quam, eget porttitor urna eleifend ac. Donec vulputate dui ac nisi malesuada rutrum. Curabitur ante mi, vestibulum et aliquet non, gravida nec nisl. Proin ullamcorper nisl a euismod tincidunt. Praesent in erat eget ante aliquet lacinia eu quis augue. </p>
-            <form action="" class="form">
-                <select name="" id="">
-                    <option value="" disabled selected >Seleccionar Talla</option>
-                    <option value="">Chica</option>
-                    <option value="">Mediana</option>
-                    <option value="">Grande</option>
-                </select>
-                <input type="number" placeholder="Cantidad" min="1"> <!--step="10" de 10 en 10-->
-                <input type="submit" name="" id="" value="Agregar al carrito">
-            </form>
+        <div class="t-shirt">
+            <div class="t-shirt__img">
+                <img src="img/3.jpg" alt="react-img" class="t-shirt__img">
+            </div>
+            <div class="t-shirt__text">
+                <p>Quisque tincidunt odio quam, eget porttitor urna eleifend ac. Donec vulputate dui ac nisi malesuada
+                    rutrum. Curabitur ante mi, vestibulum et aliquet non, gravida nec nisl. Proin ullamcorper nisl a
+                    euismod tincidunt. Praesent in erat eget ante aliquet lacinia eu quis augue. </p>
+                <form action="" class="form">
+                    <select class="form__field" name="" id="">
+                        <option value="" disabled selected>Select Size:</option>
+                        <option value="">Small</option>
+                        <option value="">Medium</option>
+                        <option value="">Large</option>
+                    </select>
+                    <input class="form__field" type="number" placeholder="Quantity:" min="1"> <!--step="10" de 10 en 10-->
+                    <input class="form__submit" type="submit" name="" id="" value="Add to Cart">
+                </form>
+            </div>
         </div>
 
     </main>
