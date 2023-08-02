@@ -1,7 +1,7 @@
 :root {
-    --primary: #9C27B0;
-    --darkPrimary: #89119D;
-    --secondary: #FFCE00;
+    --primary: #ffc3d9;
+    --darkPrimary: #9B748E;
+    --secondary: #010005;
     --darkSecondary: rgb(233, 287, 2);
     ---white: #fff;
     --black: #000;
@@ -28,7 +28,7 @@ body {
 p {
     font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(---white);
+    color: #4e3a47;
 }
 
 a {
@@ -48,7 +48,7 @@ h1,
 h2,
 h3 {
     text-align: center;
-    color: var(--secondary);
+    color: #4e3a47;
     font-family: var(--mainFont);
 }
 
@@ -69,7 +69,8 @@ h3 {
 }
 
 .header__logo{
-    margin: 3rem 0;;
+    margin: 3rem 0;
+    width: 10rem;
 }
 
 .navigation{
@@ -86,20 +87,21 @@ h3 {
     font-size: 3rem;
 }
 .navigation__link:hover, .navigation__link--active{
-    color: var(--secondary);
+    color: var(--black);
 }
 
 /*footer*/
 .footer{
     background-color: var(--darkPrimary);
-    padding: 1rem 0;
+    padding: .1rem 0;
     margin-top: 2rem;
 }
 
 .footer__text{
     font-family: var(--mainFont);
+    color: var(---white);
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 /*Grid*/
@@ -128,7 +130,7 @@ h3 {
 }
 .product__price{
     font-size: 2.8rem;
-    color: var(--secondary);
+    color: h1;
 }
 
 .product__name , .product__price{
@@ -234,7 +236,7 @@ h3 {
     color: var(---white);
 }
 .form__submit{
-    background-color: var(--secondary);
+    background-color: h1;
     border: none;
     font-size: 2rem;
     font-family: var(--mainFont);
