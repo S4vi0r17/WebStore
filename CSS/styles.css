@@ -1,6 +1,6 @@
 :root {
-    --primary: #ffc3d9;
-    --darkPrimary: #9B748E;
+    --primary: #b8c4c0;
+    --darkPrimary: #b28a8d;
     --secondary: #010005;
     --darkSecondary: rgb(233, 287, 2);
     ---white: #fff;
@@ -28,7 +28,7 @@ body {
 p {
     font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: #4e3a47;
+    color: #44353f;
 }
 
 a {
@@ -48,7 +48,7 @@ h1,
 h2,
 h3 {
     text-align: center;
-    color: #4e3a47;
+    color: #44353f;
     font-family: var(--mainFont);
 }
 
@@ -69,8 +69,8 @@ h3 {
 }
 
 .header__logo{
-    margin: 3rem 0;
-    width: 10rem;
+    margin: 0;
+    width: 17rem;
 }
 
 .navigation{
@@ -83,11 +83,11 @@ h3 {
 
 .navigation__link{
     font-family: var(--mainFont);
-    color: var(---white);
+    color: var(--black);
     font-size: 3rem;
 }
 .navigation__link:hover, .navigation__link--active{
-    color: var(--black);
+    color: var(---white);
 }
 
 /*footer*/
