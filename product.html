@@ -1,60 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Store</title>
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="header">
-        <a href="index.html">
-            <img class="header__logo" src="img/logo.png" alt="logo">
-        </a>
+      <a href="index.html">
+        <img class="header__logo" src="img/logo.png" alt="logo" />
+      </a>
     </header>
     <nav class="navigation">
-        <a class="navigation__link" href="index.html">Home</a>
-        <a class="navigation__link" href="about.html">About Us</a>
+      <a class="navigation__link" href="index.html">Home</a>
+      <a class="navigation__link" href="about.html">About Us</a>
     </nav>
 
     <main class="container">
-        <h1>ReactJs</h1>
+      <h1>ReactJs</h1>
 
-        
-
-        <div class="t-shirt">
-            <div class="t-shirt__img">
-                <img src="img/3.jpg" alt="react-img" class="t-shirt__img">
-            </div>
-            <div class="t-shirt__text">
-                <p>Quisque tincidunt odio quam, eget porttitor urna eleifend ac. Donec vulputate dui ac nisi malesuada
-                    rutrum. Curabitur ante mi, vestibulum et aliquet non, gravida nec nisl. Proin ullamcorper nisl a
-                    euismod tincidunt. Praesent in erat eget ante aliquet lacinia eu quis augue. </p>
-                <form action="" class="form">
-                    <select class="form__field" name="" id="">
-                        <option value="0" disabled selected>Select Size:</option>
-                        <option value="1">Small</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Large</option>
-                    </select>
-                    <input class="form__field" type="number" placeholder="Quantity:" min="1"> <!--step="10" de 10 en 10-->
-                    <input class="form__submit" type="submit" name="" id="" value="Add to Cart">
-                </form>
-            </div>
+      <div class="t-shirt">
+        <div class="t-shirt__img">
+          <img src="img/3.jpg" alt="react-img" class="t-shirt__img" />
         </div>
-
+        <div class="t-shirt__text">
+          <p>
+            Quisque tincidunt odio quam, eget porttitor urna eleifend ac. Donec
+            vulputate dui ac nisi malesuada rutrum. Curabitur ante mi,
+            vestibulum et aliquet non, gravida nec nisl. Proin ullamcorper nisl
+            a euismod tincidunt. Praesent in erat eget ante aliquet lacinia eu
+            quis augue.
+          </p>
+          <form action="" class="form">
+            <select class="form__field" name="" id="">
+              <option value="0" disabled selected>Select Size:</option>
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+            </select>
+            <input
+              class="form__field"
+              type="number"
+              placeholder="Quantity:"
+              min="1"
+            />
+            <!--step="10" de 10 en 10-->
+            <input
+              class="form__submit"
+              type="submit"
+              name=""
+              id=""
+              value="Add to Cart"
+            />
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
-        <p class="footer__text">© 2023 | Eder Benites</p>
+      <p class="footer__text">© 2023 | Eder Benites</p>
     </footer>
-</body>
-
+  </body>
 </html>

@@ -1,260 +1,262 @@
 :root {
-    --primary: #b8c4c0;
-    --darkPrimary: #b28a8d;
-    --secondary: #010005;
-    --darkSecondary: rgb(233, 287, 2);
-    ---white: #fff;
-    --black: #000;
-    --mainFont: font-family: 'PT Serif', serif;
+  --primary: #b8c4c0;
+  --darkPrimary: #b28a8d;
+  --secondary: #010005;
+  --darkSecondary: rgb(233, 287, 2);
+  ---white: #fff;
+  --black: #000;
+  --mainFont: "PT Serif", serif;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    background-color: var(--primary);
-    font-size: 1.6rem;
-    line-height: 1.5;
+  background-color: var(--primary);
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 p {
-    font-size: 1.8rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #44353f;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #44353f;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .container {
-    max-width: 120rem;
-    margin: 0 auto;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 h1,
 h2,
 h3 {
-    text-align: center;
-    color: #44353f;
-    font-family: var(--mainFont);
+  text-align: center;
+  color: #44353f;
+  font-family: var(--mainFont);
 }
 
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 h2 {
-    font-size: 3.2rem;
+  font-size: 3.2rem;
 }
 
 h3 {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
-.header{
-    display: flex;
-    justify-content: center;
-}
-
-.header__logo{
-    margin: 0;
-    width: 17rem;
+.header {
+  display: flex;
+  justify-content: center;
 }
 
-.navigation{
-    background-color: var(--darkPrimary);
-    padding: 1rem 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+.header__logo {
+  margin: 0;
+  width: 17rem;
 }
 
-.navigation__link{
-    font-family: var(--mainFont);
-    color: var(--black);
-    font-size: 3rem;
+.navigation {
+  background-color: var(--darkPrimary);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
-.navigation__link:hover, .navigation__link--active{
-    color: var(---white);
+
+.navigation__link {
+  font-family: var(--mainFont);
+  color: var(--black);
+  font-size: 3rem;
+}
+.navigation__link:hover,
+.navigation__link--active {
+  color: var(---white);
 }
 
 /*footer*/
-.footer{
-    background-color: var(--darkPrimary);
-    padding: .1rem 0;
-    margin-top: 2rem;
-    margin-bottom: 0;
+.footer {
+  background-color: var(--darkPrimary);
+  padding: 0.1rem 0;
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
-.footer__text{
-    font-family: var(--mainFont);
-    color: var(---white);
-    text-align: center;
-    font-size: 2rem;
-    margin: 1.3rem;
+.footer__text {
+  font-family: var(--mainFont);
+  color: var(---white);
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.3rem;
 }
 
 /*Grid*/
-.grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 2rem; /*colum and row gap*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; /*colum and row gap*/
 }
 
 @media (min-width: 768px) {
-    .grid{
-        grid-template-columns: repeat(3,2fr);
-    }
+  .grid {
+    grid-template-columns: repeat(3, 2fr);
+  }
 }
 /*Products*/
-.product{
-    background-color: var(--darkPrimary);
-    padding: 1rem;
+.product {
+  background-color: var(--darkPrimary);
+  padding: 1rem;
 }
 
-.product__info{
+.product__info {
+}
+.product__name {
+  font-size: 4rem;
+}
+.product__price {
+  font-size: 2.8rem;
+  color: h1;
+}
 
-}
-.product__name{
-    font-size: 4rem;
-}
-.product__price{
-    font-size: 2.8rem;
-    color: h1;
-}
-
-.product__name , .product__price{
-    font-family: var(--mainFont);
-    margin: 1rem 0;
-    text-align: center;
+.product__name,
+.product__price {
+  font-family: var(--mainFont);
+  margin: 1rem 0;
+  text-align: center;
 }
 
 /*Graphs*/
-.graph{
-    min-height: 30rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-column: 1 / 3;
+.graph {
+  min-height: 30rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1 / 3;
 }
-.graph__1{
-    grid-row: 2 / 3;
-    background-image: url(../img/grafico1.jpg);
+.graph__1 {
+  grid-row: 2 / 3;
+  background-image: url(../img/grafico1.jpg);
 }
-.graph__2{
-    grid-row: 8 / 9;
-    background-image: url(../img/grafico2.jpg);
+.graph__2 {
+  grid-row: 8 / 9;
+  background-image: url(../img/grafico2.jpg);
 }
 
 @media (min-width: 768px) {
-    .graph__2{
-        grid-row: 5 / 6;
-        grid-column: 2 / 4;
-    }
+  .graph__2 {
+    grid-row: 5 / 6;
+    grid-column: 2 / 4;
+  }
 }
 
 /*About us*/
 
-.information{
+.information {
+  display: grid;
+  grid-template-rows: 2, 1fr;
+}
+
+@media (min-width: 768px) {
+  .information {
+    grid-template-columns: repeat(2, auto); /*puede ser repeat (2,1fr)*/
+    column-gap: 2rem;
+  }
+}
+
+.information__text {
+  align-self: center; /*centrar verticalmente dentro de un grid*/
+}
+.information__img {
+  grid-row: 1 / 2;
+}
+
+@media (min-width: 768px) {
+  .information__img {
+    grid-column: 2 /3;
+  }
+}
+
+.blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .blocks {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.block {
+  text-align: center;
+}
+.block__title {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .t-shirt {
     display: grid;
-    grid-template-rows: 2,1fr;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
 }
 
-
-@media (min-width: 768px) {
-    .information{
-        grid-template-columns: repeat(2,auto); /*puede ser repeat (2,1fr)*/
-        column-gap: 2rem;
-    }
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* repeat(2,1fr); */
+  /* la columna tiene un tamaño mínimo de 0 (lo que significa que puede colapsar hasta un ancho mínimo de 0) y un tamaño máximo de 1fr (lo que significa que se expandirá para ocupar todo el espacio disponible en la cuadrícula de manera equitativa). */
+  gap: 2rem;
 }
-
-.information__text{
-    align-self: center; /*centrar verticalmente dentro de un grid*/
-}
-.information__img{
-    grid-row: 1 / 2;
-}
-
-@media (min-width: 768px) {
-    .information__img{
-        grid-column: 2 /3;
-    }
-}
-
-.blocks{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 2rem;
-}
-@media (min-width: 768px) {
-    .blocks{
-        grid-template-columns: repeat(4,1fr);
-    }
-}
-.block{
-    text-align: center;
-}
-.block__title{
-    margin: 0;
-}
-
-@media (min-width: 768px) {
-    .t-shirt{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        column-gap: 2rem;
-    }
-}
-
-.form{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 2rem;
-}
-.form__field{
-    /* border-color: var(--darkPrimary);
+.form__field {
+  /* border-color: var(--darkPrimary);
     border-width: 1rem;
     border-style: solid; */
-    border: 1rem solid var(--darkPrimary);
-    background-color: transparent;
-    color: var(---white);
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1rem;
-    /* appearance: none; para quitar la flechita */
+  border: 1rem solid var(--darkPrimary);
+  background-color: transparent;
+  color: var(---white);
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  /* appearance: none; para quitar la flechita */
 }
-.form__field::placeholder{
-    color: var(---white);
+.form__field::placeholder {
+  color: var(---white);
 }
-.form__submit{
-    background-color: h1;
-    border: none;
-    font-size: 2rem;
-    font-family: var(--mainFont);
-    padding: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color .3s ease;
-    transition: font-size .3s ease;
-    grid-column: 1 / 3;
+.form__submit {
+  background-color: h1;
+  border: none;
+  font-size: 2rem;
+  font-family: var(--mainFont);
+  padding: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  transition: font-size 0.3s ease;
+  grid-column: 1 / 3;
 }
-.form__submit:hover{
-    cursor: pointer;
-    background-color: #CBB6B7;
-    font-size: 2.4rem;
-    color: white
+.form__submit:hover {
+  cursor: pointer;
+  background-color: #cbb6b7;
+  font-size: 2.4rem;
+  color: white;
 }
-.block__img{
-    margin: 1rem 0;
+.block__img {
+  margin: 1rem 0;
 }
